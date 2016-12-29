@@ -1,2 +1,2 @@
 # greendaotest
-greendao 3.0version test
+greendao 3.0version test hdl
