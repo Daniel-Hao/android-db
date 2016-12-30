@@ -20,6 +20,7 @@ import java.util.List;
 
 /**
  * creat by Daniel
+ * 思考：多个线程同时操作同一张表，如何处理
  */
 public class MainActivity extends AppCompatActivity {
 
@@ -146,6 +147,7 @@ public class MainActivity extends AppCompatActivity {
                 str.append("username = " + userInfo.getUser_name());
                 str.append("\n");
                 str.append("loginid = " + userInfo.getLogin_user_id());
+                str.append("\n");
                 str.append("\n");
             }
         }
