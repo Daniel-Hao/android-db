@@ -23,6 +23,7 @@ import java.util.List;
  * 1,数据库版本升级
  * 2,<3.0版本升级为3.0
  * http://www.cnblogs.com/dsxniubility/archive/2016/07/28/5699543.html
+ * 多次测试记得卸载旧版本（在数据库名相同的情况下）
  */
 public class MainActivity extends AppCompatActivity {
 
@@ -103,11 +104,10 @@ public class MainActivity extends AppCompatActivity {
     //数据库操作，建议放入子线程操作
     private void savaUserInfo() {
 
-        /*UserInfo userInfo = userInfoSvr.loadUserInfo(mEdt1.getText().toString().trim());
+        UserInfo userInfo = userInfoSvr.loadUserInfo(mEdt1.getText().toString().trim());
         if (userInfo == null) {
             userInfo = new UserInfo();
-        }*/
-        UserInfo userInfo = new UserInfo();
+        }
         userInfo.setUser_id(mEdt1.getText().toString().trim());
         userInfo.setUser_name(mEdt2.getText().toString().trim());
         userInfoSvr.saveUserInfo(userInfo);

@@ -90,7 +90,7 @@ public class GDUserInfoSvr {
      * @return insert or update request id
      */
     public long saveUserInfo(UserInfo request) {
-        return userInfoDao.insert(request);
+        return userInfoDao.insertOrReplace(request);
     }
 
     /**
