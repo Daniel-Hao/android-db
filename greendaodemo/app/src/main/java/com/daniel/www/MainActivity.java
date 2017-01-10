@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         mBtn2 = (Button) findViewById(R.id.btn_2);
         mTv = (TextView) findViewById(R.id.tv);
 
+        Log.e("","");
 
         mBtn1.setOnClickListener(new View.OnClickListener() {
             @Override
